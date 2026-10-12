@@ -1,0 +1,14 @@
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import '@fontsource-variable/inter'
+import './styles.css'
+import App from './App.jsx'
+import { ContactProvider } from './components/ContactPicker.jsx'
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <ContactProvider>
+      <App />
+    </ContactProvider>
+  </React.StrictMode>
+)
